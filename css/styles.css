@@ -1,0 +1,185 @@
+
+body {
+	font-size: 16px;
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #BED8EA 30%, #EFD2AE 80%);
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+h1 {
+	margin: 20px 0 5px 0;
+	font-weight: 200;
+	letter-spacing: 0.6px;
+	font-size: 2em;
+}
+
+h2 {
+	margin: 5vh 0 1vh 0;
+	font-weight: 400;
+	color: #fff;
+	font-size: 2em;
+	text-shadow: 2px 2px #EFD2AE
+}
+
+h3 {
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: #2d3c49;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #02b3e4;
+}
+
+p {
+	font-weight: 300;
+}
+
+.container {
+
+}
+
+.header {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	border-bottom: 5px solid #02b3e4;
+	color: #2d3c49;
+	padding: 0 7px;
+}
+
+.logo {
+	position: absolute;
+	top: 5px;
+	width: 50px;
+	height: 50px	;
+}
+
+.name,
+.subname {
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.subname {
+	padding-bottom: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.banner {
+	width: 98%;
+	margin: 25px auto 0;
+
+}
+
+.pic {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+.featured {
+
+	font-family: "Montserrat", sans-serif;
+	margin: auto auto 60px;
+	text-align: center;
+	width: 98%;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 -1%;
+}
+
+.featured-item {
+	margin: 1%;
+
+}
+
+.featured-item__desc {
+	margin-top: 15px;
+
+}
+
+.featured-item h3 {
+	font-weight: bold;
+	font-size: 22px;
+	padding-bottom: 5px;
+	box-shadow: 0 3px 6px -6px #2d3c49;
+	border-bottom: 1px solid #efd2ae;
+}
+
+footer p {
+	font-family: monospace;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+@media screen and (max-width: 679px) {
+
+	.featured {
+		width: 100%;
+	}
+
+	.flex-container {
+		flex-wrap: wrap;
+		margin: 0;
+	}
+
+	.banner {
+		width: 100%;
+	}
+
+	.featured-item {
+		margin: 1% 0;
+	}
+
+}
+
+@media screen and (min-width: 680px) and (max-width: 1023px) {
+
+
+	.featured-item h3 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+	.container {
+		width: 1024px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	h1 {
+		font-size: 3em;
+
+	}
+
+	.logo {
+		width: 70px;
+		height: 70px;
+	}
+
+
+}
