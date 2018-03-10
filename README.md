@@ -1,2 +1,2 @@
-# porfolio-site
+# portfolio-site
 My portfolio project for 2nd phase GoogleDevNDS 
