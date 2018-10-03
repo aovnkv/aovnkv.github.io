@@ -1,2 +1,2 @@
 # portfolio-site
-My portfolio project for 2nd phase GoogleDevNDS 
+Brief profile of my works as a developer in different instances
