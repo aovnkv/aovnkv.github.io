@@ -100,6 +100,10 @@ p {
 	margin: 0 -1%;
 }
 
+.flex-container:not(last-child) {
+	margin-bottom: 4vh;
+}
+
 .featured-item {
 	flex-basis: 23%;
 	margin: 1%;
