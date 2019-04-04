@@ -31,6 +31,10 @@ h3 {
 	text-transform: uppercase;
 }
 
+.ct-title {
+	border-bottom: 1px dashed #000;
+}
+
 a {
 	text-decoration: none;
 	color: #2d3c49;
