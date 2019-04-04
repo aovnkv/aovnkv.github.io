@@ -32,6 +32,8 @@ h3 {
 }
 
 .ct-title {
+	display: inline;
+	font-size: 18px;
 	border-bottom: 1px dashed #000;
 }
 
@@ -190,5 +192,7 @@ footer p {
 		height: 70px;
 	}
 
-
+	.ct-title {
+		font-size: 24px;
+	}
 }
