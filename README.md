@@ -1,3 +1,3 @@
-# my profile
-brief profile of my works as a developer on different instances:
+# My profile
+A brief profile of my works as web developer:
 [https://aovnkv.github.io/profile/](https://aovnkv.github.io/profile/)
