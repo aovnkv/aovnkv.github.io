@@ -107,7 +107,7 @@ p {
 }
 
 .flex-container:not(last-child) {
-	margin-bottom: 4vh;
+	margin-bottom: 16px;
 }
 
 .featured-item {
