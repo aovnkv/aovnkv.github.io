@@ -125,7 +125,8 @@ p {
 }
 
 .featured-item h3 {
-	font-family: monospace, apple, sans-serif;
+	font-family: monospace, sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 	padding-bottom: 5px;
 	box-shadow: 0 3px 6px -6px #2d3c49;
