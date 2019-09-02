@@ -127,6 +127,10 @@ p {
   margin-bottom: 20px;
 }
 
+.featured-item:hover {
+  background: #02b3e4;
+}
+
 .featured-item img {
   -webkit-filter: grayscale(70%);
   filter: grayscale(70%);
