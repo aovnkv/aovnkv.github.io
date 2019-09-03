@@ -59,7 +59,12 @@
           <img alt="banner picture" src="images/ban.jpg" />
         </picture>
       </section>
-
+      <script>
+        function toggleButtons(el) {
+          el.classList.toggle('selected');
+          el.querySelector('.btn-g').classList.toggle('hidden');
+        }
+      </script>
       <section class="featured">
         <h2>Featured Work</h2>
         <div class="featured-container">
@@ -124,39 +129,74 @@
               </div>
             </div>
           </div>
-
           <div class="flex-container">
             <h3 class="featured-container--heading">Training Projects</h3>
-            <div class="featured-item">
-              <a href="https://github.com/aovnkv/funbox-task/" target="_blank">
-                <picture>
-                  <img alt="funbox test" src="images/funbox-test.jpg" />
-                </picture>
-              </a>
-              <div class="featured-item__desc">
-                <a href="https://github.com/aovnkv/funbox-task/" target="_blank"
-                  ><h3>Cat Shop</h3></a
+            <div class="featured-item" onclick="toggleButtons(this);">
+              <picture>
+                <img
+                  class="featured-item-img"
+                  alt="funbox test"
+                  src="images/kodix-auto-screen.jpg"
+                />
+              </picture>
+              <div class="btn-g hidden">
+                <a
+                  href="https://github.com/aovnkv/kodix-ultimate-test/"
+                  target="_blank"
+                  ><button>source code</button></a
                 >
+                <a
+                  href="https://aovnkv.github.io/kodix-ultimate-test/"
+                  target="_blank"
+                  ><button>app</button></a
+                >
+              </div>
+              <div class="featured-item__desc">
+                <h3>Cars Frontend Database</h3>
+                <p>Kodix Automotive Task</p>
+                <p>ReactJS, Redux</p>
+              </div>
+            </div>
+            <div class="featured-item" onclick="toggleButtons(this);">
+              <picture>
+                <img
+                  class="featured-item-img"
+                  alt="funbox test"
+                  src="images/funbox-test.jpg"
+                />
+              </picture>
+              <div class="btn-g hidden">
+                <a href="https://github.com/aovnkv/funbox-task/" target="_blank"
+                  ><button>source code</button></a
+                >
+                <a href="https://aovnkv.github.io/funbox-task/" target="_blank"
+                  ><button>app</button></a
+                >
+              </div>
+              <div class="featured-item__desc">
+                <h3>Cat Shop</h3>
                 <p>Funbox Test App</p>
                 <p>ReactJS</p>
               </div>
             </div>
-            <div class="featured-item">
-              <a
-                href="https://github.com/aovnkv/react-guess-a-flag/"
-                target="_blank"
-              >
-                <picture>
-                  <img alt="react guess a flag" src="images/react-flags.jpg" />
-                </picture>
-              </a>
-              <div class="featured-item__desc">
+            <div class="featured-item" onclick="toggleButtons(this);">
+              <picture>
+                <img alt="react guess a flag" src="images/react-flags.jpg" />
+              </picture>
+              <div class="btn-g hidden">
                 <a
                   href="https://github.com/aovnkv/react-guess-a-flag/"
                   target="_blank"
+                  ><button>source code</button></a
                 >
-                  <h3>Guess the flag</h3>
-                </a>
+                <a
+                  href="https://aovnkv.github.io/react-guess-a-flag/"
+                  target="_blank"
+                  ><button>app</button></a
+                >
+              </div>
+              <div class="featured-item__desc">
+                <h3>Guess the flag</h3>
                 <p>My own quiz app</p>
                 <p>ReactJS</p>
               </div>

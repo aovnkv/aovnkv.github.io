@@ -1,5 +1,13 @@
 .main {
   font-size: 16px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    color-stop(30%, #bed8ea),
+    color-stop(80%, #efd2ae)
+  );
   background-image: linear-gradient(
     to bottom,
     #ffffff 0%,
@@ -94,7 +102,11 @@ p {
 }
 
 .featured-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 .featured-container--heading {
@@ -102,11 +114,17 @@ p {
   color: #02b3e4;
   margin-bottom: 18px;
   padding-bottom: 5px;
+  -webkit-box-shadow: 0 3px 6px -6px #fff;
   box-shadow: 0 3px 6px -6px #fff;
   border-bottom: 1px solid #efd2ae;
 }
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 48%;
 }
@@ -116,26 +134,70 @@ p {
 }
 
 .featured-item {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 1em;
   border: 2px solid #02b3e4;
   background: rgba(255, 255, 255, 0.3);
   margin-bottom: 20px;
 }
+.featured-item.selected {
+  cursor: default;
+  background: #fff;
+}
+
+.featured-item.selected img {
+  pointer-events: none;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.featured-item.selected .featured-item__desc {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
 
 .featured-item:hover {
-  background: #02b3e4;
+  cursor: pointer;
+  background: #fff;
 }
 
 .featured-item img {
   -webkit-filter: grayscale(70%);
   filter: grayscale(70%);
-  transition: 0.5s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .featured-item img:hover {
   -webkit-filter: none;
   filter: none;
-  transition: 0.5s;
+}
+
+.featured-item .btn-g {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.featured-item .btn-g.hidden {
+  display: none;
+}
+
+.featured-item button {
+  padding: 12px;
+  margin: 6px;
+  background: white;
+  border-radius: 12px;
+}
+
+.featured-item button:hover {
+  cursor: pointer;
 }
 
 .featured-item__desc {
@@ -160,6 +222,7 @@ footer p {
   }
 
   .flex-container {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
   }
@@ -175,6 +238,9 @@ footer p {
 
 @media all and (max-width: 800px) {
   .featured-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .flex-container {
